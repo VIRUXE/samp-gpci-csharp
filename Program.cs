@@ -2,11 +2,8 @@
 
 internal class Program {
     private static void Main(string[] args) {
-        string userHomePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-        string gtaSanAndreasUserFiles = Path.Combine(userHomePath, "GTA San Andreas User Files");
+        string gtaSanAndreasUserFiles = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "GTA San Andreas User Files");
 
-        var hash = GPCI.Calculate(gtaSanAndreasUserFiles[4..]);
-
-        Console.WriteLine($"GPCI Hash: {hash}");
+        Console.WriteLine($"GPCI Hash: {GPCI.Calculate(gtaSanAndreasUserFiles[4..])}");
     }
 }
