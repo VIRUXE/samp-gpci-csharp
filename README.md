@@ -17,3 +17,9 @@ Anyhow, this, and an IP were the only things used in SA-MP at the time to _actua
 ## Why care?
 
 Well, as in the game, this was also useful to identify players from outside of the gameserver. When for example, using a _launcher_ or an external _anti-cheat_.
+
+## Other implementations
+
+I also have this implementation ported for _GO_ and _PHP_ as a _Gist_: https://gist.github.com/VIRUXE/80a27dca1604ddc8d205416ace911914
+
+There's also the original implementation in Javascript, from Renegade334: https://github.com/Renegade334/gpci-js
